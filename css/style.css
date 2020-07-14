@@ -17,7 +17,9 @@ color: #FFA315;
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
     color:#FFA315;
 }
-
+.navlink a:hover{
+    color: #FFA315;
+}
 .header-container{
     position: relative;
     width: 100%;
@@ -53,12 +55,12 @@ color: #FFA315;
 .about-us{
     padding-top: 50px;
     width: 100%;
-    height: 1197px;
+    height: 800px;
     background: #FFF1DD;
     color: #000000;
 }
 
-hr {
+.about-us hr {
 margin: 0 auto;
 width: 194px;
 height: 0px;
@@ -108,7 +110,7 @@ height: 303px;
     }
   }
   
-.about p{
+.about p {
 font-family: Abel;
 font-style: normal;
 font-weight: normal;
@@ -118,5 +120,43 @@ color: #242424;
 }
 
 .what-signal{
-    
+width: 100%;
+height: 600px;
+background: #242424;
+padding: 20px;
+color:#FFA315;  
+}
+
+.tags {
+    font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 60px;
+    color:#FFA315;
+    text-align: center;
+}
+
+.what-signal hr {
+margin: 0 auto;
+width: 194px;
+height: 0px;
+color:#FFA315;
+}
+
+.newsletter {
+width: 1440px;
+height: 400px;
+background: #FFF1DD;
+text-align: center;
+color: #000000;
+
+}
+
+.form-inline {
+    margin: auto 0;
+}
+
+.form-group .form-control{
+    width: 400px;
 }
