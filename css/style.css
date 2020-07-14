@@ -83,6 +83,31 @@ width: 570px;
 height: 303px;
 }
 
+.header {
+    width: 100%;
+    padding:100px;
+    margin: auto;
+  }
+  
+  .svg1 { 
+    margin: 50px;
+    fill: rgba(40, 40, 50, 0.3);
+    stroke-width: 2;
+    width: 100%;
+    stroke-dasharray: 0 3000;
+    animation: pulse1 3s linear infinite;
+    z-index: 1;
+  }
+  
+  @keyframes pulse1 {
+    from {
+      stroke-dasharray: 0 3000;
+    }
+    to {
+      stroke-dasharray: 3000 0;
+    }
+  }
+  
 .about p{
 font-family: Abel;
 font-style: normal;
