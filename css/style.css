@@ -8,56 +8,72 @@ body{
 font-family: Gilroy;
 font-style: normal;
 font-size: 20px;
-line-height: 60px;
-color: #FFA315;
-
 }
+
 
 /******Containing Header ******/
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
     color:#FFA315;
 }
-.navlink a:hover{
+.navlink a:hover {
     color: #FFA315;
 }
-.header-container{
-    position: relative;
-    width: 100%;
-    height: 870px;
-    background: #242424;
+.navbar-light .navbar-toggler {
+  background-color: #FFA315;
+  color: #fff;
 }
+.header-container {
+position: relative;
+width: 100%;
+background: #242424;
+}
+.hero-section {
+  margin-top: 20px;
 
-.img-fluid{
-    margin-top: 40px;
-    width: 432px;
-    height: 432px;
 }
 .head-cont{
-    margin-top: 70px;
-}
-.head-cont h4{
-    margin-top: 10px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-}
-.head-cont h1{
-    margin-top: 20px;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 60px;
+width: 395px;
+height: 240px;
+color:#FFA315;  
+margin-top: 70px;
 }
 
+.head-cont h4 {
+margin-top: 10px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+}
+.head-cont h1{
+margin-top: 20px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 60px;
+}
+.header-img {
+  padding-left: 100px;
+}
+.header-img .img-fluid {
+  width: 540px;
+  height: 460px;
+  }
+
+.navigate {
+  padding: 40px 0;
+  color: #FFA315;
+}
+/**************************************/
+
+/***************About Us*********************/
 .about-us{
-    padding-top: 50px;
-    width: 100%;
-    height: 800px;
-    background: #FFF1DD;
-    color: #000000;
+padding-top: 50px;
+width: 100%;
+background: #FFF1DD;
+color: #000000;
 }
 
 .about-us hr {
@@ -66,11 +82,11 @@ width: 194px;
 height: 0px;
 border: 1px solid #000000;
 }
- div .tag{
+ .tag{
      text-align: center;
  }
 
- section > h1,h2,h3{
+ section > h1,h2{
     font-family: Gilroy;
     font-style: normal;
     font-weight: 800;
@@ -118,34 +134,50 @@ font-size: 20px;
 line-height: 30px;
 color: #242424;
 }
+/********************************/
 
-.what-signal{
-width: 100%;
-height: 600px;
-background: #242424;
-padding: 20px;
-color:#FFA315;  
+/**************What's Signal*****************/
+.Signal-does {
+    padding: 30px 0;
+    color:#FFA315;
+    background-color: #000000;
 }
-
+.signal-does h3 {
+    padding: 10px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 30px;
+color: #FFA315;
+}
+.signal-does p{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
 .tags {
-    font-family: Gilroy;
+font-family: Gilroy;
 font-style: normal;
 font-weight: 300;
 font-size: 48px;
 line-height: 60px;
-    color:#FFA315;
-    text-align: center;
+color:#FFA315;
+text-align: center;
 }
 
-.what-signal hr {
+.what-signal hr, .signal-does hr {
 margin: 0 auto;
 width: 194px;
 height: 0px;
 color:#FFA315;
 }
+/**********************************/
 
+/**********Newsletter **************/
 .newsletter {
-width: 1440px;
+width: 100%;
 height: 400px;
 background: #FFF1DD;
 text-align: center;
@@ -159,4 +191,78 @@ color: #000000;
 
 .form-group .form-control{
     width: 400px;
+}
+
+.btn {
+width: 161px;
+height: 59px;
+background: #FFA315;
+} 
+
+.format {
+width: 568px;
+height: 59px;
+border: 1px solid #000000;
+}
+
+
+/****************Footer*********/
+
+
+.footer {
+  position: relative;
+  background: #FFA315;;
+  color: #000000;
+  line-height: 1.8;
+}
+
+
+.footer p,
+.footer ul li a {
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer p {
+  font-weight: 300;
+}
+
+footer .top{
+padding-top: 30px;
+}
+
+
+@media(max-width: 767px) {
+
+  .copyright {
+     text-align: center;
+  }
+}
+
+
+
+@media (min-width: 1000px) {
+
+  .footer .top p {
+     max-width: 200px;
+  }
+
 }
