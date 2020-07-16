@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,42 +6,43 @@
 }
 
 body{
-font-family: Gilroy;
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-size: 20px;
 }
 
-
-/******Containing Header ******/
+/*HERO SECTION*/
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+    margin: 10px;
     color:#FFA315;
 }
-.navlink a:hover {
-    color: #FFA315;
+.header-container .nav-link:hover, .header-container .navbar-brand:hover {
+  background-color: #be7b15;
+  box-shadow:  0 0 100px #b67a20, 0 0 100px #bb7205;
+  font-weight: bold;
+  color: #FFf !important;
 }
+
 .navbar-light .navbar-toggler {
   background-color: #FFA315;
   color: #fff;
 }
 .header-container {
 position: relative;
-width: 100%;
 background: #242424;
 }
 .hero-section {
-  margin-top: 20px;
-
+  height: 600px;
 }
+
 .head-cont{
-width: 395px;
-height: 240px;
-color:#FFA315;  
-margin-top: 70px;
+padding-top: 90px;
+color:#FFA315;
 }
 
 .head-cont h4 {
 margin-top: 10px;
-font-family: Gilroy;
+font-family:'Lato', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 16px;
@@ -48,34 +50,43 @@ line-height: 24px;
 }
 .head-cont h1{
 margin-top: 20px;
-font-family: Gilroy;
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 64px;
 line-height: 60px;
 }
-.header-img {
-  padding-left: 100px;
+
+.navigate p {
+font-family: Lato;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+color: #FFA315;
 }
-.header-img .img-fluid {
-  width: 540px;
-  height: 460px;
-  }
 
 .navigate {
-  padding: 40px 0;
-  color: #FFA315;
+  position: absolute;
+  bottom: 30px;
 }
-/**************************************/
 
+ .dwn-icon{
+  margin: 20px;
+  color: #FFA315 !important;
+  background-color: #000000;
+  }
+  
 /***************About Us*********************/
 .about-us{
+position: relative;
 padding-top: 50px;
-width: 100%;
 background: #FFF1DD;
 color: #000000;
 }
-
+.about-us .img-fluid {
+  background: #FFF1DD;
+}
 .about-us hr {
 margin: 0 auto;
 width: 194px;
@@ -87,7 +98,7 @@ border: 1px solid #000000;
  }
 
  section > h1,h2{
-    font-family: Gilroy;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -102,32 +113,12 @@ height: 303px;
 }
 
 .header {
-    width: 100%;
     padding:100px;
     margin: auto;
   }
   
-  .svg1 { 
-    margin: 50px;
-    fill: rgba(40, 40, 50, 0.3);
-    stroke-width: 2;
-    width: 100%;
-    stroke-dasharray: 0 3000;
-    animation: pulse1 3s linear infinite;
-    z-index: 1;
-  }
-  
-  @keyframes pulse1 {
-    from {
-      stroke-dasharray: 0 3000;
-    }
-    to {
-      stroke-dasharray: 3000 0;
-    }
-  }
-  
 .about p {
-font-family: Abel;
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
@@ -138,13 +129,13 @@ color: #242424;
 
 /**************What's Signal*****************/
 .Signal-does {
-    padding: 30px 0;
-    color:#FFA315;
-    background-color: #000000;
+padding: 30px 0;
+color:#FFA315;
+background-color: #000000;
 }
 .signal-does h3 {
-    padding: 10px;
-font-family: Gilroy;
+padding: 10px;
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 20px;
@@ -152,21 +143,24 @@ line-height: 30px;
 color: #FFA315;
 }
 .signal-does p{
-    font-style: normal;
+font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 24px;
 }
 .tags {
-font-family: Gilroy;
+font-family:'Lato', sans-serif;
 font-style: normal;
 font-weight: 300;
 font-size: 48px;
 line-height: 60px;
 color:#FFA315;
 text-align: center;
+padding: 30px;
 }
-
+.signal-does .ben{
+  padding: 20px;
+}
 .what-signal hr, .signal-does hr {
 margin: 0 auto;
 width: 194px;
@@ -177,12 +171,28 @@ color:#FFA315;
 
 /**********Newsletter **************/
 .newsletter {
-width: 100%;
-height: 400px;
+height: 574px;
 background: #FFF1DD;
 text-align: center;
 color: #000000;
 
+}
+.newsletter h3{
+padding: 20px;
+font-family:'Lato', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 48px;
+text-align: center;
+color: #000000;
+}
+.newsletter p {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
 }
 
 .form-inline {
@@ -197,7 +207,15 @@ color: #000000;
 width: 161px;
 height: 59px;
 background: #FFA315;
-} 
+}
+
+.btn:hover {
+  background-color: #3d290a;
+  box-shadow:  0 0 100px #f59404, 0 0 100px #9e6104;
+  font-weight: bold;
+  color: #FFf;
+  border: 1px solid #ffffff;
+}
 
 .format {
 width: 568px;
@@ -206,9 +224,25 @@ border: 1px solid #000000;
 }
 
 
-/****************Footer*********/
 
+/******PUBLISH*******/
 
+.publicate {
+  height: 649px;
+  background: #FFFFFF;
+}
+
+.publicate h3 {
+font-family: 'Lato' sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 48px;
+color: #242424;
+padding: 100px;
+}
+
+/**FOOTER*/
 .footer {
   position: relative;
   background: #FFA315;;
@@ -218,13 +252,13 @@ border: 1px solid #000000;
 
 
 .footer p,
-.footer ul li a {
+.footer a {
+font-family: 'Lato', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 24px;
 line-height: 29px;
 color: #000000;
-
 }
 
 .footer ul {
@@ -238,7 +272,6 @@ color: #000000;
 
 .footer ul li a:hover {
   color: #fff;
-  text-decoration: underline;
 }
 
 .footer p {
@@ -250,19 +283,120 @@ padding-top: 30px;
 }
 
 
-@media(max-width: 767px) {
 
-  .copyright {
-     text-align: center;
-  }
+/*BALL POSITIONING*/
+
+.ball {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.balls {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.ball1{
+  background-color: #FFA315;
+  position: absolute;
+  bottom: 500px;
+  right: 108px;
+}
+.ball2 {
+  position: absolute;
+  top: 400px;
+  right: 600px;
+  background: #00BCBC;
+}
+.ball3{
+  background-color: #FFA315;
+}
+
+
+.ball4 {
+  position: absolute;
+  bottom: 30px;
+  right:16px;
+}
+
+.ball5{
+  position: absolute;
+  top: 150px;
+  left:100px;
+  background-color: #FFA315;
+}
+
+.ball6 {
+  position: absolute;
+  top: 100px;
+  left:8px;
+}
+
+.ball7{
+  position: absolute;
+  top: 170px;
+  right:80px;
+  background: #00BCBC
+}
+
+.ball8{
+  position: absolute;
+  bottom: 400px;
+  right: 600px;
 }
 
 
 
-@media (min-width: 1000px) {
+marquee {
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-size: 20px;
+font-weight: 500;
+color: #FFA315;
+}
 
-  .footer .top p {
-     max-width: 200px;
+.appscreen .carousel img {
+  height: 500px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  color:#000000;
+  background-color: #FFA315;
+}
+/*MEDIA QUERY*/
+
+@media (max-width: 768px){
+  /* For mobile phones: */
+
+  .head-cont{
+    padding-top: 10px;
+    }
+
+  .hero-section {
+    height: 800px;
+    margin-top: 0;
   }
 
-}
+  input[type=submit], input[type=email]{
+    width: 95%;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .format-input{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  ul{
+    padding: 0;
+  }
+   li{
+    margin: 10px auto;
+    padding: 5px;
+    float: none;
+    display: inline-block;
+
+  }
+ }

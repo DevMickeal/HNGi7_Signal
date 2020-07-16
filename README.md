@@ -1,1 +1,2 @@
 # HNGi7_Signal
+# Signal is a company that makes tech to help impairment, Our app will help deaf people listen to music. It’s revolutionary and groundbreaking. We are dedicated to changing the future forever. Signal works by acessing the brain’s auditory receptors, with a special headset that allows the brain’s receptors convert the vibrations into sound. Signal is being made to bridge the gap of accessibility among the impaired. 
