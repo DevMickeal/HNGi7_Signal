@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
                                 </li>
                             </ul>
                     </div> </nav>
-                    <marquee direction="right">Signal is coming!!!, register to receive email notification when its out</marquee>
+                    <marquee direction="right">Signal is coming!!! Get Ready, Register to receive email notification </marquee>
                 <div class="container hero-section">
                     <div class="row">
                         <div class="col-sm head-cont">
