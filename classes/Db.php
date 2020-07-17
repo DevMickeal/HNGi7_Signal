@@ -13,10 +13,9 @@ class Db {
     //check if there is connection
     public $isConn;
     public $datab;
-        $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
     //connect to db
-    public function __construct($username = $cleardb_url["root"], $password = "", $host = $cleardb_url["host"], $dbname = "newsletter", $options = []) {
+    public function __construct($username = "root", $password = "", $host = "127.0.0.1", $dbname = "newsletter", $options = []) {
         $this->isConn = TRUE;
         try {
             $this->datab = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8", $username, $password, $options);
